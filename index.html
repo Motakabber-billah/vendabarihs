@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ভেন্ডাবাড়ী বহুমূখী উচ্চ বিদ্যালয়</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/5565aa961c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <style>
+        .tiro-bangla-regular {
+            font-family: "Tiro Bangla", serif;
+        }
+
+        .tiro-bangla-regular-italic {
+            font-family: "Tiro Bangla", serif;
+        }
+    </style>
+</head>
+
+<body class="tiro-bangla-regular">
+    <header>
+        <nav class=" dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+            <div class="">
+                <div
+                    class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-evenly  bg-[#14BDEE] dark:bg-gray-900 text-center py-1">
+                    <div class="flex flex-row items-center justify-center gap-2">
+                        <div>
+                            <h3 class="text-sm text-white dark:text-gray-400">Have any questions?</h3>
+                        </div>
+                        <div class="flex justify-center items-center rtl:space-x-reverse">
+                            <a href="tel:+8801234567890" class="text-sm text-white dark:text-gray-400">
+                                <i class="fas fa-phone mr-1"></i> +8801234567890
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center items-center space-x-2 rtl:space-x-reverse">
+                        <a href="#" class="text-sm text-white dark:text-gray-400">
+                            <i class="fa-solid fa-envelope mr-2"></i>vendabarihs@gmail.com
+                        </a>
+                        <p class="text-sm text-white dark:text-gray-400">শিক্ষা, সংস্কৃতি ও উন্নয়নের পথে</p>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="bg-[#DBC64C] max-w-screen-xl flex flex-wrap items-center justify-between md:space-y-3 md:justify-center xl:justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+                    <span
+                        class="self-center md:text-2xl font-semibold whitespace-nowrap dark:text-white transition-transform duration-200 hover:scale-110">ভেন্ডাবাড়ী
+                        বহুমূখী উচ্চ বিদ্যালয়</span>
+                </a>
+                <button data-collapse-toggle="navbar-multi-level" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-multi-level" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+                    <ul
+                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#DBC64C] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-[#DBC64C] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 font-bold text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent transition-transform duration-200 hover:scale-110"
+                                aria-current="page">হোম</a>
+                        </li>
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent transition-transform duration-200 hover:scale-110 font-bold">আমাদের
+                                সম্পর্কে
+                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar"
+                                class="z-10 hidden font-normal bg-white bg-transparent divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-2 text-sm text-black dark:text-gray-200"
+                                    aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white transition-transform duration-200 rounded-md hover:scale-110 font-bold">ম্যানেজিং
+                                            কমিটি</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white transition-transform duration-200 rounded-md hover:scale-110 font-bold">শিক্ষকমন্ডলী</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white transition-transform duration-200 hover:scale-110 rounded-md font-bold">কর্মচারীবৃন্দ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition-transform duration-200 hover:scale-110 font-bold">একাডেমিক
+                                ক্যালেন্ডার</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition-transform duration-200 hover:scale-110 font-bold">ফলাফল</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition-transform duration-200 hover:scale-110 font-bold">ফটোগ্যালারি</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition-transform duration-200 hover:scale-110 font-bold">যোগাযোগ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- slider Starts -->
+        <div class="relative w-full max-w-7xl mx-auto mt-32 md:mt-36 xl:mt-28" id="custom-slider">
+            <div class="overflow-hidden rounded-lg relative h-64 md:h-96">
+                <div class="absolute inset-0 transition-transform duration-700 ease-in-out" id="slider-images">
+                    <img src="Images/pexels-jonas-horsch-102497290-16723071.jpg"
+                        class="w-full h-64 md:h-96 object-cover hidden" alt="Slide 1">
+                    <img src="Images/istockphoto-1070730232-1024x1024.jpg"
+                        class="w-full  h-64 md:h-96 object-cover hidden" alt="Slide 2">
+                    <img src="Images/pexels-jonas-horsch-102497290-16723071.jpg"
+                        class="w-full h-64 md:h-96 object-cover hidden" alt="Slide 3">
+                </div>
+                <!-- Previous Button -->
+                <button id="prev-slide"
+                    class="absolute top-1/2 left-2 -translate-y-1/2 bg-white/50 hover:bg-white/80 rounded-full p-2 shadow transition-transform duration-200 hover:scale-110 z-10">
+                    <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <!-- Next Button -->
+                <button id="next-slide"
+                    class="absolute top-1/2 right-2 -translate-y-1/2 bg-white/50 hover:bg-white/80 rounded-full p-2 shadow transition-transform duration-200 hover:scale-110 z-10">
+                    <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Indicators -->
+            <div class="flex justify-center mt-4 space-x-2" id="slider-indicators">
+                <button class="w-3 h-3 rounded-full bg-gray-400" data-slide="0"></button>
+                <button class="w-3 h-3 rounded-full bg-gray-300" data-slide="1"></button>
+                <button class="w-3 h-3 rounded-full bg-gray-300" data-slide="2"></button>
+            </div>
+        </div>
+        <!-- slider Ends -->
+    </header>
+    <main>
+        <!-- Notice Board Starts -->
+        <section class="max-w-7xl mx-auto mt-10">
+            <div class="flex flex-col md:flex-row justify-between gap-5 w-full justify-items-between">
+                <div
+                    class="max-w-4xl flex gap-5 bg-white hover:bg-[#DBC64C] dark:bg-gray-800 rounded-lg shadow-md p-6 ">
+                    <div>
+                        <img class="w-28 h-28 hidden lg:block" src="Images/noticeboard.png" alt="">
+                    </div>
+                    <div class="lg:w-[600px] xl:w-[700px]">
+                        <h2 class="text-2xl font-bold mb-4">নোটিশ বোর্ড</h2>
+                        <ul class="list-disc pl-10 space-y-10 h-auto">
+                            <a href="#">
+                                <li class="text-gray-700 dark:text-gray-300 hover:underline mb-2">নতুন শিক্ষাবর্ষের
+                                    ক্লাস
+                                    শুরু হবে ১লা জানুয়ারি থেকে।</li>
+                            </a>
+                            <a href="#">
+                                <li class="text-gray-700 dark:text-gray-300 hover:underline mb-2">মাধ্যমিক পরীক্ষার
+                                    ফলাফল
+                                    প্রকাশিত হবে ১৫ই ফেব্রুয়ারি।</li>
+                            </a>
+                            <a href="#">
+                                <li class="text-gray-700 dark:text-gray-300 hover:underline mb-2">বছরের শেষ পরীক্ষার
+                                    সময়সূচী
+                                    শীঘ্রই প্রকাশ করা হবে।</li>
+                            </a>
+                            <a href="#">
+                                <li class="text-gray-700 dark:text-gray-300 hover:underline mb-2">স্কুলের বার্ষিক
+                                    সাংস্কৃতিক
+                                    অনুষ্ঠান আগামী মাসে অনুষ্ঠিত হবে।</li>
+                            </a>
+                            <a href="#">
+                                <li class="text-gray-700 dark:text-gray-300 hover:underline">স্কুলের বার্ষিক সাংস্কৃতিক
+                                    অনুষ্ঠান আগামী মাসে অনুষ্ঠিত হবে।</li>
+                            </a>
+                            <div class="flex justify-end ">
+                                <a href="#"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Read more
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                    </svg>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+                <div
+                    class="max-w-sm bg-[#DBC64C] hover:bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="Images/unnamed.webp" alt="" />
+                    </a>
+                    <h3 class="text-2xl font-bold mt-3 text-center mb-2">সংক্ষিপ্ত পরিচিতি</h3>
+                    <div class=" flex justify-center">
+                        <a href="#"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-2">
+                            Read more
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Notice Board Ends -->
+
+        <section>
+            <!-- Calender starts -->
+            <div class="max-w-[400px] mx-auto mt-10 bg-white dark:bg-gray-800 rounded-lg shadow p-1">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-2">
+                    <div class="flex items-center gap-2">
+                        <button id="prev-month"
+                            class="px-2 py-1 rounded bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">
+                            <i class="fa fa-chevron-left"></i>
+                        </button>
+                        <div id="calendar-title" class="font-bold text-lg"></div>
+                        <button id="next-month"
+                            class="px-2 py-1 rounded bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">
+                            <i class="fa fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <select id="calendar-month"
+                            class="w-24 border rounded px-2 py-1 text-gray-700 dark:bg-gray-700 dark:text-white"></select>
+                        <select id="calendar-year"
+                            class="w-[75px] border rounded px-2 py-1 text-gray-700 dark:bg-gray-700 dark:text-white"></select>
+                    </div>
+                </div>
+                <div id="calendar-years" class="text-center mb-2 space-y-1"></div>
+                <div id="calendar-grid" class="overflow-x-auto"></div>
+            </div>
+
+            <!-- Calender Ends -->
+        </section>
+
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script>
+        // Bangla digits and month names
+        const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+        const banglaMonths = [
+            "জানুয়ারি", "ফেব্রুয়ারি", "মার্চ", "এপ্রিল", "মে", "জুন",
+            "জুলাই", "আগস্ট", "সেপ্টেম্বর", "অক্টোবর", "নভেম্বর", "ডিসেম্বর"
+        ];
+        function toBanglaNumber(num) {
+            return num.toString().split('').map(d => banglaDigits[d] || d).join('');
+        }
+        function getBanglaYear(date) {
+            const banglaYearStart = new Date(date.getFullYear(), 3, 14); // April 14
+            let year = date.getFullYear() - 593;
+            if (date < banglaYearStart) year -= 1;
+            return year;
+        }
+        function getHijriYear(date) {
+            return Math.floor((date.getFullYear() - 622) * 33 / 32);
+        }
+        function renderYears(date) {
+            const gregorianYear = date.getFullYear();
+            const banglaYear = getBanglaYear(date);
+            const hijriYear = getHijriYear(date);
+            document.getElementById('calendar-years').innerHTML = `
+                <div class="flex items-center justify-evenly">
+                    <div>English Year: <span class="font-semibold">${gregorianYear}</span></div>
+                    <div>বাংলা সন: <span class="font-semibold">${toBanglaNumber(banglaYear)}</span></div>
+                    <div>هجري سنة: <span class="font-semibold">${hijriYear}</span></div>
+                </div>
+                `;
+        }
+        function renderCalendar(date) {
+            const today = new Date();
+            const year = date.getFullYear();
+            const month = date.getMonth();
+            const firstDay = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+            // Title
+            document.getElementById('calendar-title').innerText =
+                banglaMonths[month] + " " + toBanglaNumber(year);
+
+            // Table
+            let table = `<table class="w-full text-center border-collapse">
+                    <thead>
+                        <tr>
+                            <th class="p-1 text-gray-500">Sun</th>
+                            <th class="p-1 text-gray-500">Mon</th>
+                            <th class="p-1 text-gray-500">Tue</th>
+                            <th class="p-1 text-gray-500">Wed</th>
+                            <th class="p-1 text-gray-500">Thu</th>
+                            <th class="p-1 text-gray-500">Fri</th>
+                            <th class="p-1 text-gray-500">Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                `;
+            let day = 1;
+            for (let i = 0; i < firstDay; i++) {
+                table += `<td></td>`;
+            }
+            for (let i = firstDay; i < 7; i++) {
+                table += `<td class="${day === today.getDate() && month === today.getMonth() && year === today.getFullYear()
+                    ? 'bg-blue-500 text-white font-bold rounded-full'
+                    : 'hover:bg-blue-100 rounded-full cursor-pointer'
+                    }">${toBanglaNumber(day)}</td>`;
+                day++;
+            }
+            table += `</tr>`;
+            while (day <= daysInMonth) {
+                table += `<tr>`;
+                for (let i = 0; i < 7 && day <= daysInMonth; i++) {
+                    table += `<td class="${day === today.getDate() && month === today.getMonth() && year === today.getFullYear()
+                        ? 'bg-blue-500 text-white font-bold rounded-full'
+                        : 'hover:bg-blue-100 rounded-full cursor-pointer'
+                        }">${toBanglaNumber(day)}</td>`;
+                    day++;
+                }
+                table += `</tr>`;
+            }
+            table += `</tbody></table>`;
+            document.getElementById('calendar-grid').innerHTML = table;
+            renderYears(date);
+        }
+
+        // State
+        let selectedDate = new Date();
+
+        // Month and year dropdowns
+        const monthSelect = document.getElementById('calendar-month');
+        const yearSelect = document.getElementById('calendar-year');
+
+        // Populate months
+        banglaMonths.forEach((m, i) => {
+            const opt = document.createElement('option');
+            opt.value = i;
+            opt.textContent = m;
+            monthSelect.appendChild(opt);
+        });
+
+        // Populate years (from 1970 to 2070, you can adjust range)
+        const currentYear = new Date().getFullYear();
+        for (let y = 1970; y <= 2070; y++) {
+            const opt = document.createElement('option');
+            opt.value = y;
+            opt.textContent = y;
+            yearSelect.appendChild(opt);
+        }
+
+        // Set initial values
+        monthSelect.value = selectedDate.getMonth();
+        yearSelect.value = selectedDate.getFullYear();
+
+        monthSelect.addEventListener('change', function () {
+            selectedDate.setMonth(parseInt(this.value));
+            renderCalendar(selectedDate);
+        });
+        yearSelect.addEventListener('change', function () {
+            selectedDate.setFullYear(parseInt(this.value));
+            renderCalendar(selectedDate);
+        });
+
+        document.getElementById('prev-month').onclick = () => {
+            selectedDate.setMonth(selectedDate.getMonth() - 1);
+            monthSelect.value = selectedDate.getMonth();
+            yearSelect.value = selectedDate.getFullYear();
+            renderCalendar(selectedDate);
+        };
+        document.getElementById('next-month').onclick = () => {
+            selectedDate.setMonth(selectedDate.getMonth() + 1);
+            monthSelect.value = selectedDate.getMonth();
+            yearSelect.value = selectedDate.getFullYear();
+            renderCalendar(selectedDate);
+        };
+
+        // Initial render
+        renderCalendar(selectedDate);
+    </script>
+    <script>
+        const images = document.querySelectorAll('#slider-images img');
+        const indicators = document.querySelectorAll('#slider-indicators button');
+        let current = 0;
+        let autoSlideInterval;
+        let isAnimating = false;
+
+        // Prepare images for sliding
+        images.forEach((img, i) => {
+            img.classList.add('absolute', 'top-0', 'left-0', 'transition-transform', 'duration-700', 'ease-in-out');
+            img.style.width = '100%';
+            img.style.height = '100%';
+            img.classList.add('hidden');
+        });
+
+        function showSlide(idx, direction = 1) {
+            if (isAnimating || idx === current) return;
+            isAnimating = true;
+
+            const prev = current;
+            const next = idx;
+
+            images[prev].classList.remove('hidden');
+            images[next].classList.remove('hidden');
+
+            // Set initial positions
+            images[next].classList.add(direction > 0 ? 'translate-x-full' : '-translate-x-full');
+            images[next].classList.remove('translate-x-0', '-translate-x-0');
+
+            // Animate
+            setTimeout(() => {
+                images[prev].classList.add('-translate-x-full');
+                images[prev].classList.remove('translate-x-0', 'translate-x-full');
+                images[next].classList.add('translate-x-0');
+                images[next].classList.remove('translate-x-full', '-translate-x-full');
+            }, 20);
+
+            // After animation, clean up
+            setTimeout(() => {
+                images[prev].classList.add('hidden');
+                images[prev].classList.remove('-translate-x-full', 'translate-x-0', 'translate-x-full');
+                images[next].classList.remove('hidden', 'translate-x-full', '-translate-x-full');
+                images[next].classList.add('translate-x-0');
+                isAnimating = false;
+            }, 700);
+
+            indicators.forEach((btn, i) => {
+                btn.classList.toggle('bg-gray-400', i === idx);
+                btn.classList.toggle('bg-gray-300', i !== idx);
+            });
+            current = idx;
+        }
+
+        function nextSlide() {
+            showSlide((current + 1) % images.length, 1);
+        }
+
+        function prevSlide() {
+            showSlide((current - 1 + images.length) % images.length, -1);
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 4000);
+        }
+
+        function stopAutoSlide() {
+            clearInterval(autoSlideInterval);
+        }
+
+        document.getElementById('prev-slide').onclick = () => {
+            prevSlide();
+            stopAutoSlide();
+            startAutoSlide();
+        };
+        document.getElementById('next-slide').onclick = () => {
+            nextSlide();
+            stopAutoSlide();
+            startAutoSlide();
+        };
+        indicators.forEach((btn, i) => {
+            btn.onclick = () => {
+                showSlide(i, i > current ? 1 : -1);
+                stopAutoSlide();
+                startAutoSlide();
+            };
+        });
+
+        // Initialize
+        images.forEach((img, i) => {
+            img.classList.add('hidden');
+            img.classList.remove('translate-x-0', 'translate-x-full', '-translate-x-full');
+        });
+        images[0].classList.remove('hidden');
+        images[0].classList.add('translate-x-0');
+        indicators[0].classList.add('bg-gray-400');
+        startAutoSlide();
+    </script>
+</body>
+
+</html>
