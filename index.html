@@ -213,7 +213,7 @@
                     </div>
                 </div>
                 <div
-                    class="max-w-sm bg-[#DBC64C] hover:bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    class="flex flex-col justify-center w-full md:max-w-sm bg-[#DBC64C] hover:bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img class="rounded-t-lg" src="Images/unnamed.webp" alt="" />
                     </a>
@@ -234,35 +234,344 @@
         </section>
         <!-- Notice Board Ends -->
 
-        <section>
-            <!-- Calender starts -->
-            <div class="max-w-[400px] mx-auto mt-10 bg-white dark:bg-gray-800 rounded-lg shadow p-1">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-2">
-                    <div class="flex items-center gap-2">
-                        <button id="prev-month"
-                            class="px-2 py-1 rounded bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">
-                            <i class="fa fa-chevron-left"></i>
-                        </button>
-                        <div id="calendar-title" class="font-bold text-lg"></div>
-                        <button id="next-month"
-                            class="px-2 py-1 rounded bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">
-                            <i class="fa fa-chevron-right"></i>
-                        </button>
+        <section class="mt-10 pb-5">
+            <div class="flex flex-col gap-10 lg:gap-0 lg:flex-row items-center justify-evenly">
+                <!-- সভাপতি starts -->
+                <div class="relative w-[400px] h-auto border border-white rounded-xl">
+                    <div class="absolute flex justify-center items-center left-24">
+                        <img class="w-48 h-48 rounded-xl drop-shadow-2xl" src="Images/team_2.jpg.webp" alt="">
                     </div>
-                    <div class="flex items-center gap-2">
-                        <select id="calendar-month"
-                            class="w-24 border rounded px-2 py-1 text-gray-700 dark:bg-gray-700 dark:text-white"></select>
-                        <select id="calendar-year"
-                            class="w-[75px] border rounded px-2 py-1 text-gray-700 dark:bg-gray-700 dark:text-white"></select>
+                    <div class="flex flex-col justify-end w-[400px] h-52 bg-[#fffdfd] mt-28 shadow-2xl rounded-xl">
+                        <h3 class="text-2xl text-center font-bold">সভাপতি</h3>
+                        <h3 class="text-xl text-center font-semibold">জনাব মোঃ আব্দুর রহমান</h3>
+                        <div class="flex justify-end py-3 pr-3">
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Read more
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- সভাপতি Ends -->
+                <!-- প্রধানশিক্ষক starts -->
+                <div class="relative w-[400px] h-auto border border-white rounded-xl">
+                    <div class="absolute flex justify-center items-center left-24">
+                        <img class="w-48 h-48 rounded-xl drop-shadow-2xl" src="Images/team_2.jpg.webp" alt="">
+                    </div>
+                    <div class="flex flex-col justify-end w-[400px] h-52 bg-[#fffdfd] mt-28 shadow-2xl rounded-xl">
+                        <h3 class="text-2xl text-center font-bold">প্রধানশিক্ষক</h3>
+                        <h3 class="text-xl text-center font-semibold">জনাব মোঃ আব্দুর রহমান</h3>
+                        <div class="flex justify-end py-3 pr-3">
+                            <a href="#"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Read more
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- প্রধানশিক্ষক Ends -->
+
+                <!-- Calender starts -->
+                <div class="max-w-[400px] bg-white dark:bg-gray-800 rounded-lg shadow p-1">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-2">
+                        <div class="flex items-center gap-2">
+                            <button id="prev-month"
+                                class="px-2 py-1 rounded bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">
+                                <i class="fa fa-chevron-left"></i>
+                            </button>
+                            <div id="calendar-title" class="font-bold text-lg"></div>
+                            <button id="next-month"
+                                class="px-2 py-1 rounded bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">
+                                <i class="fa fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <select id="calendar-month"
+                                class="w-24 border rounded px-2 py-1 text-gray-700 dark:bg-gray-700 dark:text-white"></select>
+                            <select id="calendar-year"
+                                class="w-[75px] border rounded px-2 py-1 text-gray-700 dark:bg-gray-700 dark:text-white"></select>
+                        </div>
+                    </div>
+                    <div id="calendar-years" class="text-center mb-2 space-y-1"></div>
+                    <div id="calendar-grid" class="overflow-x-auto"></div>
+                </div>
+                <!-- Calender Ends -->
+            </div>
+        </section>
+        <!-- Information Corner Starts -->
+        <section class="mt-10 mx-2 lg:mx-8   py-4 bg-gradient-to-r from-teal-100">
+            <h3 class="text-center font-bold text-3xl text-amber-600 hover:text-blue-700 mb-3">তথ্য কর্ণার</h3>
+            <div class="flex flex-col xl:flex-row gap-10 justify-center xl:justify-evenly">
+                <div class="flex flex-col items-center">
+                    <h3 class="text-center font-bold text-2xl mb-3 text-[#FF4500] hover:text-[#DA70D6]">শিক্ষক-কর্মচারী
+                    </h3>
+                    <div class="flex">
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">ক্রমিক</h3>
+                        <h3 class="w-32 md:w-72 md:h-10 border-2 border-orange-300 p-2">পদবি</h3>
+                        <h3 class="w-28 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">পদ সংখ্যা</h3>
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">মন্তব্য</h3>
+                    </div>
+                    <div class="flex">
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">০১</h3>
+                        <h3 class="w-32 md:w-72 md:h-10 border-2 border-orange-300 p-2">প্রধান শিক্ষক</h3>
+                        <h3 class="w-28 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">০১</h3>
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">কর্মরত</h3>
+                    </div>
+                    <div class="flex">
+                        <h3 class="w-14 md:w-20 md:h-36 border-2 border-orange-300 p-2 text-center">০২</h3>
+                        <h3 class="w-32 md:w-72 md:h-36 border-2 border-orange-300 p-2 text-justify">সহকারী শিক্ষক
+                            (বাংলা),
+                            (ইংরেজি), (সমাজ বিজ্ঞান), (কৃষি), (গার্হস্থ বিজ্ঞান), (গণিত), (ভৌত বিজ্ঞান), (ধর্ম ও নৈতিক
+                            শিক্ষা),
+                            (শারীরিক শিক্ষা), (তথ্য ও যোগাযোগ প্রযুক্তি), (চারু ও কারুকলা)</h3>
+                        <h3 class="w-28 md:w-20 md:h-36 border-2 border-orange-300 p-2 text-center">১১</h3>
+                        <h3 class="w-14 md:w-20 md:h-36 border-2 border-orange-300 p-2 text-center">০৩ টি শুন্য পদ</h3>
+                    </div>
+                    <div class="flex">
+                        <h3 class="w-14 md:w-20 md:h-14 border-2 border-orange-300 p-2 text-center">০৩</h3>
+                        <h3 class="w-32 md:w-72 md:h-14 border-2 border-orange-300 p-2">কম্পিউটার ল্যাব অপারেটর (সরকার
+                            কর্তৃক ল্যাব
+                            চালু থাকলে)</h3>
+                        <h3 class="w-28 md:w-20 md:h-14 border-2 border-orange-300 p-2 text-center">০১</h3>
+                        <h3 class="w-14 md:w-20 md:h-14 border-2 border-orange-300 p-2 text-center">প্রযোজ্য নয়</h3>
+                    </div>
+                    <div class="flex">
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">০৪</h3>
+                        <h3 class="w-32 md:w-72 md:h-10 border-2 border-orange-300 p-2">অফিস সহকারী কাম হিসাব সহকারী
+                        </h3>
+                        <h3 class="w-28 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">০১</h3>
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">কর্মরত</h3>
+                    </div>
+                    <div class="flex">
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">০৫</h3>
+                        <h3 class="w-32 md:w-72 md:h-10 border-2 border-orange-300 p-2">নিরাপত্তাকর্মী</h3>
+                        <h3 class="w-28 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">০১</h3>
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">কর্মরত</h3>
+                    </div>
+                    <div class="flex">
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">০৬</h3>
+                        <h3 class="w-32 md:w-72 md:h-10 border-2 border-orange-300 p-2">পরিচ্ছন্নতাকর্মী</h3>
+                        <h3 class="w-28 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">০১</h3>
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">কর্মরত</h3>
+                    </div>
+                    <div class="flex">
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">০৭</h3>
+                        <h3 class="w-32 md:w-72 md:h-10 border-2 border-orange-300 p-2">নৈশ্য প্রহরী</h3>
+                        <h3 class="w-28 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">০১</h3>
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">কর্মরত</h3>
+                    </div>
+                    <div class="flex">
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">০৮</h3>
+                        <h3 class="w-32 md:w-72 md:h-10 border-2 border-orange-300 p-2">আয়া</h3>
+                        <h3 class="w-28 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">০১</h3>
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">কর্মরত</h3>
                     </div>
                 </div>
-                <div id="calendar-years" class="text-center mb-2 space-y-1"></div>
-                <div id="calendar-grid" class="overflow-x-auto"></div>
+                <div class="flex flex-col items-center w-auto">
+                    <h3 class="text-center font-bold text-2xl mb-3 text-[#FF4500] hover:text-[#DA70D6]">শিক্ষার্থী</h3>
+                    <div class="flex">
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">ক্রমিক</h3>
+                        <h3 class="w-32 md:w-64 md:h-10 border-2 border-orange-300 p-2">শ্রেণি</h3>
+                        <h3 class="w-28 md:w-28 md:h-10 border-2 border-orange-300 p-2 text-center">মোট শিক্ষার্থী</h3>
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">ছাত্রী</h3>
+                    </div>
+                    <div class="flex">
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">০১</h3>
+                        <h3 class="w-32 md:w-64 md:h-10 border-2 border-orange-300 p-2">ষষ্ঠ শ্রেণি</h3>
+                        <h3 class="w-28 md:w-28 md:h-10 border-2 border-orange-300 p-2 text-center">৫২</h3>
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">২০</h3>
+                    </div>
+                    <div class="flex">
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">০২</h3>
+                        <h3 class="w-32 md:w-64 md:h-10 border-2 border-orange-300 p-2">সপ্তম শ্রেণি</h3>
+                        <h3 class="w-28 md:w-28 md:h-10 border-2 border-orange-300 p-2 text-center">৪১</h3>
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">১০</h3>
+                    </div>
+                    <div class="flex">
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">০৩</h3>
+                        <h3 class="w-32 md:w-64 md:h-10 border-2 border-orange-300 p-2">অষ্টম শ্রেণি</h3>
+                        <h3 class="w-28 md:w-28 md:h-10 border-2 border-orange-300 p-2 text-center">৩৫</h3>
+                        <h3 class="w-14 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">১৫</h3>
+                    </div>
+                    <div class="space-y-4 mt-8 pl-4 md:pl-0">
+                        <p>রাজারামপুর নিম্ন মাধ্যমিক বিদ্যালয়টি প্রতিষ্ঠিত হয় ০১ জানুয়ারি ১৯৯৪</p>
+                        <p>প্রথম স্বীকৃতি প্রাপ্তির তারিখ ০১ জানুয়ারি ১৯৯৬</p>
+                        <p>প্রথম M.P.O. ভূক্তির তারিখ ০১ এপ্রিল ২০০০</p>
+                        <p>MPO Code: 9107241201</p>
+                        <p>Level Of MPO: Junior</p>
+                    </div>
+                </div>
             </div>
-
-            <!-- Calender Ends -->
         </section>
+        <!-- Information Corner Ends -->
 
+        <!-- Ministry and Department starts  -->
+        <section class="mt-10">
+            <h3 class="text-center mb-4 text-3xl text-[#DA70D6]">গুরুত্বপূর্ণ অধিদপ্তর সমূহের লিংক</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mx-2 md:mx-0 gap-3 justify-items-center">
+                <!-- মাধ্যমিক ও উচ্চ মাধ্যমিক অধিদপ্তর -->
+
+                <div class="card w-full md:w-80 lg:w-96 h-60 bg-indigo-100 shadow-xl border-2 border-[#DA70D6]">
+                    <div class="card-body">
+                        <h2 class="card-title text-orange-500">মাধ্যমিক ও উচ্চ মাধ্যমিক অধিদপ্তর </h2>
+                        <a class="flex items-center pl-0 md:pl-5" href="https://dshe.gov.bd/">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">DSHE</h3>
+                        </a>
+                        <a class="flex items-center pl-0 md:pl-5" href="https://dshe.gov.bd/site/view/notices">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">সকল নোটিশ</h3>
+                        </a>
+                        <a class="flex items-center pl-0 md:pl-5 " href="https://www.emis.gov.bd/emis">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">অনলাইন এমপিও আবেদন</h3>
+                        </a>
+                        <a class="flex items-center pl-0 md:pl-5" href="https://hsp.pmeat.gov.bd/HSP-MIS/login">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">প্রধানমন্ত্রীর শিক্ষা সহায়তা
+                                ট্রাস্ট</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- বাংলাদেশ শিক্ষাতথ্য ও পরিসংখ্যান ব্যুরো (ব্যানবেইস) -->
+
+                <div class="card w-full md:w-80 lg:w-96 h-60 bg-indigo-100 shadow-xl border-2 border-[#DA70D6]">
+                    <div class="card-body">
+                        <h2 class="card-title text-orange-500">বাংলাদেশ শিক্ষাতথ্য ও পরিসংখ্যান ব্যুরো (ব্যানবেইস)</h2>
+                        <a class="flex items-center pl-0 md:pl-5" href="https://banbeis.gov.bd/">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">BANBEIS</h3>
+                        </a>
+                        <a class="flex items-center pl-0 md:pl-5" href="https://banbeis.gov.bd/site/view/notices">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">সকল নোটিশ</h3>
+                        </a>
+                        <a class="flex items-center pl-0 md:pl-5" href="http://crvs-institute.banbeis.gov.bd/">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">ইউনিক আইডি</h3>
+                        </a>
+                        <a class="flex items-center pl-0 md:pl-5" href="http://202.72.235.217:3028/login/">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">শিক্ষা জরিপ</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- বেসরকারি শিক্ষক নিবন্ধন ও প্রত্যয়ন কর্তৃপক্ষ (এনটিআরসিএ) -->
+
+                <div class="card w-full md:w-80 lg:w-96 h-60 bg-indigo-100 shadow-xl border-2 border-[#DA70D6]">
+                    <div class="card-body">
+                        <h2 class="card-title text-orange-500">বেসরকারি শিক্ষক নিবন্ধন ও প্রত্যয়ন কর্তৃপক্ষ (এনটিআরসিএ)
+                        </h2>
+                        <a class="flex items-center pl-0 md:pl-5" href="https://ntrca.gov.bd/">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">NTRCA</h3>
+                        </a>
+                        <a class="flex items-center pl-0 md:pl-5" href="https://ntrca.gov.bd/site/view/notices">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">সকল নোটিশ</h3>
+                        </a>
+                        <a class="flex items-center pl-0 md:pl-5"
+                            href="http://103.230.104.210:8088/ntrca/c7/app/ihome.php">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">ই-রিকুজিশন লগইন</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- মাধ্যমিক ও উচ্চ মাধ্যমিক শিক্ষা বোর্ড, দিনাজপুর -->
+                <div class="card w-full md:w-80 lg:w-96 h-60 bg-indigo-100 shadow-xl border-2 border-[#DA70D6]">
+                    <div class="card-body">
+                        <h2 class="card-title text-orange-500">মাধ্যমিক ও উচ্চ মাধ্যমিক শিক্ষা বোর্ড, দিনাজপুর</h2>
+                        <a class="flex items-center pl-0 md:pl-5" href="https://dinajpureducationboard.gov.bd/">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">শিক্ষা বোর্ড</h3>
+                        </a>
+                        <a class="flex items-center pl-0 md:pl-5"
+                            href="https://dinajpureducationboard.gov.bd/site/view/notices">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">সকল নোটিশ</h3>
+                        </a>
+                        <a class="flex items-center pl-0 md:pl-5" href="https://sonali-e-sheba.dinajpurboard.gov.bd/">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">সোনালী ই সেবা</h3>
+                        </a>
+                        <a class="flex items-center pl-0 md:pl-5" href="https://eboardresults.com/v2/home">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">এসএসসি / এইচএসসি পরীক্ষার ফলাফল
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড, বাংলাদেশ -->
+                <div class="card w-full md:w-80 lg:w-96 h-60 bg-indigo-100 shadow-xl border-2 border-[#DA70D6]">
+                    <div class="card-body">
+                        <h2 class="card-title text-orange-500">জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড, বাংলাদেশ</h2>
+                        <a class="flex items-center pl-0 md:pl-5" href="https://nctb.gov.bd/">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">এনসিটিবি</h3>
+                        </a>
+                        <a class="flex items-center pl-0 md:pl-5" href="https://nctb.gov.bd/site/view/notices">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">সকল নোটিশ</h3>
+                        </a>
+                        <a class="flex items-center pl-0 md:pl-5" href="http://13.214.189.217/">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">পাঠ্যপুস্তকের গ্রহণ/বিতরণ
+                                সিস্টেম</h3>
+                        </a>
+                        <a class="flex items-center pl-0 md:pl-5"
+                            href="https://nctb.portal.gov.bd/site/page/d01e72b0-8ecd-4c81-bffd-c9e117b7fdad/-">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">২০২৫ শিক্ষাবর্ষের পাঠ্যপুস্তকের
+                                তালিকা</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- মাদ্রাসা শিক্ষা অধিদপ্তর -->
+                <div class="card w-full md:w-80 lg:w-96 h-60 bg-indigo-100 shadow-xl border-2 border-[#DA70D6]">
+                    <div class="card-body">
+                        <h2 class="card-title text-orange-500">মাদ্রাসা শিক্ষা অধিদপ্তর</h2>
+                        <a class="flex items-center pl-0 md:pl-5" href="https://dme.gov.bd/">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">মাদ্রাসা শিক্ষা অধিদপ্তর</h3>
+                        </a>
+                        <a class="flex items-center pl-0 md:pl-5" href="https://dme.gov.bd/site/view/notices">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">সকল নোটিশ</h3>
+                        </a>
+                        <a class="flex items-center pl-0 md:pl-5" href="https://oa.memis.gov.bd/login">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">MEMIS-অনলাইন আবেদন</h3>
+                        </a>
+                        <a class="flex items-center pl-0 md:pl-5"
+                            href="https://www.mygov.bd/services/info?id=BDGS-1696486879">
+                            <i class="flex justify-center fa-solid fa-caret-right mr-4 text-green-600"></i>
+                            <h3 class="text-blue-950 hover:underline underline-offset-4">নিয়োগে ডিজির প্রতিনিধি মনোনয়নের
+                                জন্য আবেদন
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Ministry and Department Ends  -->
 
     </main>
     <footer>
