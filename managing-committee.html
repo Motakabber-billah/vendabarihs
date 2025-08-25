@@ -71,7 +71,7 @@
                     <ul
                         class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#DBC64C] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-[#DBC64C] dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
-                            <a href="#"
+                            <a href="index.html"
                                 class="block py-2 px-3 font-bold text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent transition-transform duration-200 hover:scale-110"
                                 aria-current="page">হোম</a>
                         </li>
@@ -128,7 +128,105 @@
         </nav>
     </header>
     <main>
-
+        <section>
+            <div>
+                <div class="max-w-screen-xl mx-auto mb-4 border-b border-gray-200 dark:border-gray-700 mt-36">
+                    <ul class="flex flex-wrap justify-center -mb-px text-sm font-medium text-center"
+                        id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content"
+                        data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500"
+                        data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300"
+                        role="tablist">
+                        <li class="me-2" role="presentation">
+                            <button class="inline-block p-4 border-b-2 rounded-t-lg" id="regular-styled-tab"
+                                data-tabs-target="#styled-regular" type="button" role="tab" aria-controls="regular"
+                                aria-selected="false">নিয়মিত কমিটি</button>
+                        </li>
+                        <li class="me-2" role="presentation">
+                            <button
+                                class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                                id="adhok-styled-tab" data-tabs-target="#styled-adhok" type="button" role="tab"
+                                aria-controls="adhok" aria-selected="false">এডহক কমিটি</button>
+                        </li>
+                    </ul>
+                </div>
+                <div id="default-styled-tab-content">
+                    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-regular" role="tabpanel"
+                        aria-labelledby="regular-tab">
+                        <h2 class="text-xl font-semibold mb-8 text-center">নিয়মিত ম্যানেজিং কমিটি</h2>
+                        <div class="collapse bg-base-200 mb-5">
+                            <input type="checkbox" class="peer" />
+                            <div
+                                class="collapse-title bg-primary text-primary-content peer-checked:bg-secondary  peer-checked:text-secondary-content text-xl">
+                                বর্তমানে নিয়মিত ম্যানেজিং কমিটি নেই
+                            </div>
+                            <div
+                                class="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
+                                <p>এডহক কমিটি গঠিত হয়েছে</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-adhok" role="tabpanel"
+                        aria-labelledby="adhok-tab">
+                        <h2 class="text-xl font-semibold mb-8 text-center">এডহক কমিটি</h2>
+                        <p class="mb-4 text-black text-center text-xl">দিনাজপুর শিক্ষা বোর্ডের স্মারক নংঃ ও তারিখঃ
+                            মোতাবেক একটি এডহক কমিটি গঠিত হয়।</p>
+                        <div class="flex flex-col items-center justify-center">
+                            <div class="flex">
+                                <h3 class="w-14 md:w-16 md:h-10 border-2 border-orange-300 p-2 text-center">ক্রমিক
+                                </h3>
+                                <h3 class="w-32 md:w-64 md:h-10 border-2 border-orange-300 p-2">নাম</h3>
+                                <h3 class="w-20 md:w-20 md:h-10 border-2 border-orange-300 p-2 text-center">পদবি
+                                </h3>
+                                <h3 class="w-16 md:w-32 md:h-10 border-2 border-orange-300 p-2 text-center">মোবাইল
+                                </h3>
+                            </div>
+                            <div class="flex">
+                                <h3 class="w-14 md:w-16 md:h-auto border-2 border-orange-300 p-2 text-center">০১
+                                </h3>
+                                <h3 class="w-32 md:w-64 md:h-auto border-2 border-orange-300 p-2">সহকারী
+                                    প্রোগ্রামার, ইউআইটিআরসিই, ব্যানবেইস</h3>
+                                <h3 class="w-20 md:w-20 md:h-auto border-2 border-orange-300 p-2 text-center">সভাপতি
+                                </h3>
+                                <h3
+                                    class="w-16 md:w-32 md:h-auto border-2 border-orange-300 p-2 text-center flex text-wrap break-all">
+                                    ০১৭৩৭১৪৫৩০৮</h3>
+                            </div>
+                            <div class="flex">
+                                <h3 class="w-14 md:w-16 md:h-auto border-2 border-orange-300 p-2 text-center">০২
+                                </h3>
+                                <h3 class="w-32 md:w-64 md:h-auto border-2 border-orange-300 p-2">নাম</h3>
+                                <h3 class="w-20 md:w-20 md:h-auto border-2 border-orange-300 p-2 text-center">শিক্ষক
+                                    প্রতিনিধি</h3>
+                                <h3 class="w-16 md:w-32 md:h-auto border-2 border-orange-300 p-2 text-center">মোবাইল
+                                </h3>
+                            </div>
+                            <div class="flex">
+                                <h3 class="w-14 md:w-16 md:h-auto border-2 border-orange-300 p-2 text-center">০৩
+                                </h3>
+                                <h3 class="w-32 md:w-64 md:h-auto border-2 border-orange-300 p-2">নাম</h3>
+                                <h3 class="w-20 md:w-20 md:h-auto border-2 border-orange-300 p-2 text-center">
+                                    অভিভাবক প্রতিনিধি</h3>
+                                <h3 class="w-16 md:w-32 md:h-auto border-2 border-orange-300 p-2 text-center">মোবাইল
+                                </h3>
+                            </div>
+                            <div class="flex">
+                                <h3 class="w-14 md:w-16 md:h-auto border-2 border-orange-300 p-2 text-center">০৪
+                                </h3>
+                                <h3 class="w-32 md:w-64 md:h-auto border-2 border-orange-300 p-2">প্রধান শিক্ষক</h3>
+                                <h3 class="w-20 md:w-20 md:h-auto border-2 border-orange-300 p-2 text-center">সদস্য
+                                    সচিব</h3>
+                                <h3 class="w-16 md:w-32 md:h-auto border-2 border-orange-300 p-2 text-center">মোবাইল
+                                </h3>
+                            </div>
+                        </div>
+                        <div class=" mt-10 flex items-center justify-center">
+                            <a href="#"
+                                class="border-2 rounded-lg border-orange-400 p-4 hover:bg-orange-400 hover:text-white text-xl">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer
         class="flex flex-col md:flex-row justify-center md:gap-5 lg:gap-20 xl:gap-40 md:p-1 lg:p-10 bg-[#EEAECA] bg-[radial-gradient(circle,_rgba(238,174,202,1)_0%,_rgba(148,187,233,1)_100%)]">
